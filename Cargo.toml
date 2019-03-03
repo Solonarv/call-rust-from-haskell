@@ -1,0 +1,13 @@
+[package]
+name = "hs-rust-ffi-test"
+version = "0.1.0"
+authors = ["Solonarv <nstamm@gmx.de>"]
+edition = "2018"
+
+[dependencies]
+libc = "*"
+
+[lib]
+name = "hsffitest"
+path = "rust/lib.rs"
+crate-type = ["cdylib"]
